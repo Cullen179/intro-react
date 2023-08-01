@@ -1,3 +1,5 @@
+import Footer from "./Footer"
+
 function App() {
   return (
     <>
@@ -5,9 +7,7 @@ function App() {
         Intro to React
       </h1>
 
-      <footer className="fixed bottom-0 translate-y-full flex justify-between items-center">
-
-      </footer>
+      <Footer />
     </>
   )
 }
