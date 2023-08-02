@@ -10,6 +10,8 @@ import RefValue from "./RefValue";
 import EffectRender from "./EffectRender";
 import EffectSubcribe from "./EffectSubcribe";
 import EffectWhyCleanup from "./EffectWhyCleanup";
+import MultipleState from "./MultipleState";
+import QueuePrevState from "./QueuePrevState";
 import Footer from "./Footer";
 import "./index.css";
 
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
   {
     path: "/effectwhycleanup",
     element: <EffectWhyCleanup />,
+  },
+  {
+    path: "/multiplestate",
+    element: <MultipleState />,
+  },
+  {
+    path: "/queueprevstate",
+    element: <QueuePrevState />,
   },
 ]);
 
