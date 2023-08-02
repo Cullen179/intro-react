@@ -5,6 +5,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from "./App";
+import RefDom from "./RefDom";
+import RefValue from "./RefValue";
+import EffectRender from "./EffectRender";
+import EffectSubcribe from "./EffectSubcribe";
+import EffectWhyCleanup from "./EffectWhyCleanup";
+import Footer from "./Footer";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -14,13 +20,30 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/about",
-    element: <div>About page</div>,
+    path: "/refdom",
+    element: <RefDom />,
+  },
+  {
+    path: "/refvalue",
+    element: <RefValue />,
+  },
+  {
+    path: "/effectrender",
+    element: <EffectRender />,
+  },
+  {
+    path: "/effectsubcribe",
+    element: <EffectSubcribe />,
+  },
+  {
+    path: "/effectwhycleanup",
+    element: <EffectWhyCleanup />,
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>
 );
