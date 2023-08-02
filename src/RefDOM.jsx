@@ -1,4 +1,4 @@
-import {useState, useEffect, useRef} from 'react';
+import {useRef} from 'react';
 
 function RefForm() {
   const inputRef = useRef(null);
@@ -10,7 +10,7 @@ function RefForm() {
   return (
     <>
       <h1>useRef form</h1>
-      <input ref={inputRef} />
+      <input className='border border-black' ref={inputRef} />
       <button onClick={handleClick}>
         Focus the input
       </button>
@@ -29,7 +29,7 @@ function Form() {
   return (
     <>
       <h1>QuerySelector form</h1>
-      <input />
+      <input className='border border-black' />
       <button onClick={handleClick}>
         Focus the input
       </button>
