@@ -5,6 +5,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from "./App";
+import Example from "./Example";
+import ImpureFunction from "./ImpureFunction";
+import PureFunction from "./PureFunction";
+import StateJS from "./StateJS";
+import StateReactJS from "./StateReactJS";
 import RefDom from "./RefDom";
 import RefValue from "./RefValue";
 import EffectRender from "./EffectRender";
@@ -17,6 +22,31 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+
+  {
+    path: "/example",
+    element: <Example />,
+  },
+
+  {
+    path: "/impure-function",
+    element: <ImpureFunction />,
+  },
+
+  {
+    path: "/pure-function",
+    element: <PureFunction />,
+  },
+
+  {
+    path: "/statejs",
+    element: <StateJS />,
+  },
+
+  {
+    path: "/statereactjs",
+    element: <StateReactJS />,
   },
 
   {
