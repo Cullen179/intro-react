@@ -19,6 +19,9 @@ import QueuePrevState from "./QueuePrevState";
 import Ex1 from "./Ex1";
 import Ex2 from "./Ex2";
 import Ex3 from "./Ex3";
+import work1 from "./Work1";
+import work2 from "./Work2";
+import work3 from "./Work3";
 import ChildrenProps from "./ChildrenProps";
 import Footer from "./Footer";
 import "./index.css";
@@ -89,6 +92,18 @@ const router = createBrowserRouter([
     element: <Ex3 />,
   },
   {
+    path: "/work1",
+    element: <work1 />,
+  },
+  {
+    path: "/work2",
+    element: <work2 />,
+  },
+  {
+    path: "/work3",
+    element: <work3 />,
+  },
+  {
     path: "/childrenprops",
     element: <ChildrenProps />,
   },
@@ -97,6 +112,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <div className="flex-grow"></div>
     <Footer />
   </React.StrictMode>
 );

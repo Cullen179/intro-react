@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="fixed bottom-0 underline w-full bg-blue-300">
+        <footer className="underline mt-32 w-full bg-blue-300">
         <div className="flex px-20 py-3 text justify-center items-center flex-wrap gap-5">
           <a href="/">Home</a>
           <a href="/example">Example</a>
@@ -19,6 +19,9 @@ export default function Footer() {
           <a href="/ex1">Ex1</a>
           <a href="/ex2">Ex2</a>
           <a href="/ex3">Ex3</a>
+          <a href="/work1">Work1</a>
+          <a href="/work2">Work2</a>
+          <a href="/work3">Work3</a>
         </div>
       </footer>
     )
