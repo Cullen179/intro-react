@@ -8,7 +8,6 @@ import App from "./App";
 import Example from "./Example";
 import ImpureFunction from "./ImpureFunction";
 import PureFunction from "./PureFunction";
-import StateJS from "./StateJS";
 import StateReactJS from "./StateReactJS";
 import RefDom from "./RefDom";
 import RefValue from "./RefValue";
@@ -17,6 +16,10 @@ import EffectSubcribe from "./EffectSubcribe";
 import EffectWhyCleanup from "./EffectWhyCleanup";
 import MultipleState from "./MultipleState";
 import QueuePrevState from "./QueuePrevState";
+import Ex1 from "./Ex1";
+import Ex2 from "./Ex2";
+import Ex3 from "./Ex3";
+import ChildrenProps from "./ChildrenProps";
 import Footer from "./Footer";
 import "./index.css";
 
@@ -40,12 +43,6 @@ const router = createBrowserRouter([
     path: "/pure-function",
     element: <PureFunction />,
   },
-
-  {
-    path: "/statejs",
-    element: <StateJS />,
-  },
-
   {
     path: "/statereactjs",
     element: <StateReactJS />,
@@ -78,6 +75,22 @@ const router = createBrowserRouter([
   {
     path: "/queueprevstate",
     element: <QueuePrevState />,
+  },
+  {
+    path: "/ex1",
+    element: <Ex1 />,
+  },
+  {
+    path: "/ex2",
+    element: <Ex2 />,
+  },
+  {
+    path: "/ex3",
+    element: <Ex3 />,
+  },
+  {
+    path: "/childrenprops",
+    element: <ChildrenProps />,
   },
 ]);
 
