@@ -9,7 +9,7 @@ import Example from "./Example";
 import ImpureFunction from "./ImpureFunction";
 import PureFunction from "./PureFunction";
 import StateReactJS from "./StateReactJS";
-import RefDom from "./RefDom";
+import RefDom from "./RefDOM";
 import RefValue from "./RefValue";
 import EffectRender from "./EffectRender";
 import EffectSubcribe from "./EffectSubcribe";
